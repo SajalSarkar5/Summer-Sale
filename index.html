@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Sale</title>
+    <link rel="icon" type="image/x-icon" href="images/Summer 1.png">
+    <!-- tailwind css link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=EB+Garamond:wght@400;500;600;700;800&family=Lato:wght@400;700;900&family=Manrope:wght@400;500;600;700;800&family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/ae15632d16.js" crossorigin="anonymous"></script>
+    <!-- style -->
+    <style>
+        .work-sans {
+            font-family: 'Work Sans', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-[#F9F6E2]">
+        <section class="lg:container mx-auto">
+            <div class="flex lg:gap-7 flex-col md:flex-col lg:flex-row justify-center items-center text-center">
+                <div class="lg:flex-1 text-center py-7 lg:py-64">
+                    <h6 class="work-sans text-xl md:text-xl lg:text-3xl font-medium text-[#111]">---SALE FEVER---</h6>
+                    <h1 class="work-sans text-[#111] text-4xl md:text-4xl lg:text-6xl font-bold py-7 lg:py-14">Purchase
+                        TK 200 or <br> above & get <span class="text-[#E527B2]">20% off</span></h1>
+                    <div class="flex gap-4 flex-col md:flex-row lg:flex-row justify-center items-center">
+                        <p class="work-sans text-2xl font-medium text-[#111]">Use Promo Code</p>
+                        <button
+                            class="bg-[#E527B2] rounded-lg text-[#FFF] text-2xl font-semibold py-4 px-6">SELL200</button>
+                    </div>
+                </div>
+                <div class="lg:flex-1 lg:py-20">
+                    <img src="images/Summer 1.png" alt="">
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <article class="lg:container mx-auto flex gap-6 justify-center flex-col md:flex-row py-10 lg:py-32">
+            <section class="md:w-1/2 lg:w-3/4 w-full">
+                <div class="p-5">
+                    <h3 class="work-sans text-[#111] text-4xl font-semibold pb-8">Kitchenware</h3>
+                    <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                        <!-- 1 number card -->
+                        <div onclick="productItems('product1')" class="card card-compact bg-base-100 shadow-xl p-5">
+                            <div class="bg-[#f3f3f3] py-8">
+                                <figure><img src="images/prod1.png" alt="" /></figure>
+                            </div>
+                            <div class="card-body text-center">
+                                <div class="text-[#FFC107] text-xl">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <h2 class="work-sans text-xl text-[#111] font-semibold">K. Accessories</h2>
+                                <p class="text-[#878787] work-sans text-lg font-normal">39.00 TK</p>
+
+                            </div>
+                        </div>
+                        <!-- 2 number card -->
+                        <div onclick="productItems('product2')" class="card card-compact bg-base-100 shadow-xl p-5">
+                            <div class="bg-[#f3f3f3] py-8">
+                                <figure><img src="images/prod2.png" alt="" /></figure>
+                            </div>
+                            <div class="card-body text-center">
+                                <div class="text-[#FFC107] text-xl">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <h2 class="work-sans text-xl text-[#111] font-semibold">Kitchen cleaner</h2>
+                                <p class="text-[#878787] work-sans text-lg font-normal">25.00 TK</p>
+
+                            </div>
+                        </div>
+                        <!-- 3 number card -->
+                        <div onclick="productItems('product3')" class="card card-compact bg-base-100 shadow-xl p-5">
+                            <div class="bg-[#f3f3f3] py-8">
+                                <figure><img src="images/prod3.png" alt="" /></figure>
+                            </div>
+                            <div class="card-body text-center">
+                                <div class="text-[#FFC107] text-xl">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <h2 class="work-sans text-xl text-[#111] font-semibold">K. Accessories</h2>
+                                <p class="text-[#878787] work-sans text-lg font-normal">49.00 TK</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5 lg:py-14">
+                    <h3 class="work-sans text-[#111] text-4xl font-semibold pb-8">Sportswear</h3>
+                    <!-- 4 number card -->
+                    <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                        <div onclick="productItems('product4')" class="card card-compact bg-base-100 shadow-xl p-5">
+                            <div class="bg-[#f3f3f3] py-8">
+                                <figure><img src="images/prod4.png" alt="" /></figure>
+                            </div>
+                            <div class="card-body text-center">
+                                <div class="text-[#FFC107] text-xl">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <h2 class="work-sans text-xl text-[#111] font-semibold">Sports Back Cap</h2>
+                                <p class="text-[#878787] work-sans text-lg font-normal">49.00 TK</p>
+
+                            </div>
+                        </div>
+                        <!-- 5 number card -->
+                        <div onclick="productItems('product5')" class="card card-compact bg-base-100 shadow-xl p-5">
+                            <div class="bg-[#f3f3f3] py-8">
+                                <figure><img src="images/prod5.png" alt="" /></figure>
+                            </div>
+                            <div class="card-body text-center">
+                                <div class="text-[#FFC107] text-xl">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <h2 class="work-sans text-xl text-[#111] font-semibold">Full Jersey Set</h2>
+                                <p class="text-[#878787] work-sans text-lg font-normal">69.00 TK</p>
+
+                            </div>
+                        </div>
+                        <!-- 6 number card -->
+                        <div onclick="productItems('product6')" class="card card-compact bg-base-100 shadow-xl p-5">
+                            <div class="bg-[#f3f3f3] py-8">
+                                <figure><img src="images/prod6.png" alt="" /></figure>
+                            </div>
+                            <div class="card-body text-center">
+                                <div class="text-[#FFC107] text-xl">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <h2 class="work-sans text-xl text-[#111] font-semibold">Sports cates</h2>
+                                <p class="text-[#878787] work-sans text-lg font-normal">159.00 TK</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <h3 class="work-sans text-[#111] text-4xl font-semibold pb-8">Furniture</h3>
+                    <!-- 7 number card -->
+                    <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                        <div onclick="productItems('product7')" class="card card-compact bg-base-100 shadow-xl p-5">
+                            <div class="bg-[#f3f3f3] py-8">
+                                <figure><img src="images/prod7.png" alt="" /></figure>
+                            </div>
+                            <div class="card-body text-center">
+                                <div class="text-[#FFC107] text-xl">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <h2 class="work-sans text-xl text-[#111] font-semibold">Single Relax Chair</h2>
+                                <p class="text-[#878787] work-sans text-lg font-normal">185.00 TK</p>
+
+                            </div>
+                        </div>
+                        <!-- 8 number card -->
+                        <div onclick="productItems('product8')" class="card card-compact bg-base-100 shadow-xl p-5">
+                            <div class="bg-[#f3f3f3] py-8">
+                                <figure><img src="images/prod8.png" alt="" /></figure>
+                            </div>
+                            <div class="card-body text-center">
+                                <div class="text-[#FFC107] text-xl">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <h2 class="work-sans text-xl text-[#111] font-semibold">Children play</h2>
+                                <p class="text-[#878787] work-sans text-lg font-normal">299.00 TK</p>
+
+                            </div>
+                        </div>
+                        <!-- 9 number card -->
+                        <div onclick="productItems('product9')" class="card card-compact bg-base-100 shadow-xl p-5">
+                            <div class="bg-[#f3f3f3] py-8">
+                                <figure><img src="images/prod9.png" alt="" /></figure>
+                            </div>
+                            <div class="card-body text-center">
+                                <div class="text-[#FFC107] text-xl">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <h2 class="work-sans text-xl text-[#111] font-semibold">Flexible Sofa</h2>
+                                <p class="text-[#878787] work-sans text-lg font-normal">339.00 TK</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="md:w-1/2 lg:w-1/4 w-full">
+                <div class="p-5 lg:pt-24">
+                    <div class=" w-80 bg-base-100 shadow-xl rounded-lg">
+                        <div class="p-6">
+                            <h5 class="work-sans text-[#111] text-2xl font-medium pb-4">Have coupon?</h5>
+                            <div class="relative">
+                                <input id="coupon-code" type="text" placeholder="Coupon code"
+                                    class="input input-bordered w-full pr-16" />
+                                <button disabled id="discount-button"
+                                    class="btn bg-[#E527B2] text-white hover:bg-fuchsia-400 absolute top-0 right-0 rounded-l-none capitalize">Apply</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-80 bg-base-100 shadow-xl rounded-lg mt-6 px-4">
+                        <ol id="buy-now" class="list-decimal border-b-[1px] px-10 py-4"></ol>
+
+                        <div class="px-4 py-4 space-y-3">
+                            <h4 class="work-sans text-2xl font-medium text-[#111]">Total price: <span id="total-price" class="text-[#878787]">00</span> <span class="text-[#878787]">TK</span></h4>
+                            <h4 class="work-sans text-2xl font-medium text-[#111]">Discount: <span id="discount" class="text-[#878787]">00</span> <span class="text-[#878787]">TK</span></h4>
+                            <h4 class="work-sans text-2xl font-medium text-[#111] border-b-[1px] pb-3">Total:
+                                <span id="total" class="text-[#878787]">00</span> <span class="text-[#878787]">TK</span></h4>
+                                <button disabled id="purchase" class="btn work-sans text-[#FFF] text-xl hover:bg-fuchsia-400 font-semibold bg-[#E527B2] rounded-lg capitalize w-full">Make Purchase</button>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <script src="js/style.js"></script>
+</body>
+
+</html>

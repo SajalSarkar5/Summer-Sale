@@ -50,7 +50,7 @@
             <section class="md:w-1/2 lg:w-3/4 w-full">
                 <div class="p-5">
                     <h3 class="work-sans text-[#111] text-4xl font-semibold pb-8">Kitchenware</h3>
-                    <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                    <div class="grid gap-6 grid-cols-1 md:grid-cols-1 lg:grid-cols-3">
                         <!-- 1 number card -->
                         <div onclick="productItems('product1')" class="card card-compact bg-base-100 shadow-xl p-5">
                             <div class="bg-[#f3f3f3] py-8">
@@ -110,7 +110,7 @@
                 <div class="p-5 lg:py-14">
                     <h3 class="work-sans text-[#111] text-4xl font-semibold pb-8">Sportswear</h3>
                     <!-- 4 number card -->
-                    <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                    <div class="grid gap-6 grid-cols-1 md:grid-cols-1 lg:grid-cols-3">
                         <div onclick="productItems('product4')" class="card card-compact bg-base-100 shadow-xl p-5">
                             <div class="bg-[#f3f3f3] py-8">
                                 <figure><img src="images/prod4.png" alt="" /></figure>
@@ -169,7 +169,7 @@
                 <div class="p-5">
                     <h3 class="work-sans text-[#111] text-4xl font-semibold pb-8">Furniture</h3>
                     <!-- 7 number card -->
-                    <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                    <div class="grid gap-6 grid-cols-1 md:grid-cols-1 lg:grid-cols-3">
                         <div onclick="productItems('product7')" class="card card-compact bg-base-100 shadow-xl p-5">
                             <div class="bg-[#f3f3f3] py-8">
                                 <figure><img src="images/prod7.png" alt="" /></figure>
@@ -244,13 +244,32 @@
                         <ol id="buy-now" class="list-decimal border-b-[1px] px-10 py-4"></ol>
 
                         <div class="px-4 py-4 space-y-3">
-                            <h4 class="work-sans text-2xl font-medium text-[#111]">Total price: <span id="total-price" class="text-[#878787]">00</span> <span class="text-[#878787]">TK</span></h4>
-                            <h4 class="work-sans text-2xl font-medium text-[#111]">Discount: <span id="discount" class="text-[#878787]">00</span> <span class="text-[#878787]">TK</span></h4>
+                            <h4 class="work-sans text-2xl font-medium text-[#111]">Total price: <span id="total-price"
+                                    class="text-[#878787]">00</span> <span class="text-[#878787]">TK</span></h4>
+                            <h4 class="work-sans text-2xl font-medium text-[#111]">Discount: <span id="discount"
+                                    class="text-[#878787]">00</span> <span class="text-[#878787]">TK</span></h4>
                             <h4 class="work-sans text-2xl font-medium text-[#111] border-b-[1px] pb-3">Total:
-                                <span id="total" class="text-[#878787]">00</span> <span class="text-[#878787]">TK</span></h4>
-                                <button disabled id="purchase" class="btn work-sans text-[#FFF] text-xl hover:bg-fuchsia-400 font-semibold bg-[#E527B2] rounded-lg capitalize w-full">Make Purchase</button>
+                                <span id="total" class="text-[#878787]">00</span> <span class="text-[#878787]">TK</span>
+                            </h4>
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button disabled id="make-purchase"
+                                class="btn work-sans text-[#FFF] text-xl hover:bg-fuchsia-400 font-semibold bg-[#E527B2] rounded-lg capitalize w-full"
+                                onclick="my_modal_1.showModal()">Make
+                                Purchase</button>
+                            <dialog id="my_modal_1" class="modal">
+                                <form method="dialog" class="modal-box">
+                                    <div class="flex justify-center items-center text-center">
+                                        <img src="images/congo.png" alt="">
+                                    </div>
+                                    <h1 class="work-sans text-[#111] text-5xl font-bold text-center py-5">Congratulations</h1>
+                                    <p class="py-4 text-center work-sans text-[#878787] font-normal text-xl">Your Purchase the product</p>
+                                    <div class="modal-action flex justify-center items-center">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button onclick="goHome('home')" class="btn work-sans text-[#FFF] text-xl hover:bg-fuchsia-400 font-semibold bg-[#E527B2] rounded-lg capitalize">Go Home</button>
+                                    </div>
+                                </form>
+                            </dialog>
                         </div>
-
                     </div>
                 </div>
             </section>

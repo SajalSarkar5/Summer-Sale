@@ -56,15 +56,19 @@ function priceCalculate(price) {
         if(couponCode.value === 'SELL200'){
             discount.innerText = totalPrice.innerText * 20 / 100
             total.innerText = totalPrice.innerText - discount.innerText
-            
+            couponCode.value = '';
         }
     })
 }
 
 
 function purchaseButton(total){
-    const purchase = document.querySelector('#purchase')
+    const purchase = document.getElementById('make-purchase')
     if(total > 0){
         purchase.removeAttribute('disabled')
     }
+}
+
+function goHome(){
+    window.location.href = 'http://127.0.0.1:5500/index.html';
 }
